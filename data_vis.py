@@ -72,6 +72,23 @@ ax1.axis('equal')
 # show the plot
 plt.show()
 
+#?###############
+#* Scatter Plot #
+#?################
+
+# values on the x axis
+x = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
+
+# values on the y axis
+y = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
+
+# make the actual scatter plot
+plt.scatter(x, y)
+
+# show the plot
+plt.show()
+
+
 #?##############
 #* prettytable #
 #?##############
