@@ -294,3 +294,16 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?################
+    #* Distance Plots#
+    #?################
+
+    # set the plot figure size
+    plt.figure(figsize=(9, 6))
+
+    # plot distance plot with x data df, and kde false (don't show kde of the distribution)
+    sns.distplot(x=df['math score'], kde=False)
+
+    # show the actual plot
+    plt.show()
