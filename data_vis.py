@@ -416,7 +416,7 @@ if (show_seaborn == True):
                 data=df
                 )
 
-    # We show the actual boxplot
+    # Show the actual boxplot
     plt.show()
 
     # ? Multi Boxplot:
@@ -425,4 +425,24 @@ if (show_seaborn == True):
     sns.boxplot(data=df)
 
     # Show the actual boxplot
+    plt.show()
+
+    #?################
+    #* Swarm Plotting#
+    #?################
+
+    # * This plots a scatterplots per category with its points being non overlapping
+    # ? Swarm plots form good complement to box or violin plots
+
+    # We set the figure size
+    plt.figure(figsize=(12, 8))
+
+    # We do a swarm plot with x label and y label, data df and an opacity of 0.8
+    sns.swarmplot(x='race/ethnicity',
+                  y='math score',
+                  data=df,
+                  alpha=0.8
+                  )
+
+    # Show the actual plot
     plt.show()
