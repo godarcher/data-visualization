@@ -356,3 +356,21 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?#################
+    #* Paired plotting#
+    #?#################
+
+    # * This kind of plot is somewhat harder --> what does it do?
+    # ? It pairwise plots distrutions of a dataset with different methods
+    # ? It does this in numeric columns
+    # ? The input is the subsets of the data with columns you want to plot distributions in between
+
+    # We do a pairplot with 3 different inputs (should result in 9 outputs)
+    sns.pairplot(df[['math score',
+                     'reading score',
+                     'writing score']]
+                 )
+
+    # show the actual plot
+    plt.show()
