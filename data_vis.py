@@ -1,5 +1,6 @@
 
 from matplotlib import pyplot as plt
+from prettytable import PrettyTable
 
 ###########
 #HISTOGRAM#
@@ -69,3 +70,20 @@ ax1.axis('equal')
 
 #show the plot
 plt.show()
+
+#############
+#Prettytable#
+#############
+
+#specifying column names
+mytable = PrettyTable(["Student Name", "Class", "Section", "Percentage"])
+
+#adding rows
+mytable.add_row(["Serra", "X", "B", "91.2%"])
+mytable.add_row(["Penny", "B", "C", "61.2%"])
+mytable.add_row(["Erik", "B", "B", "90.2%"])
+mytable.add_row(["Josso", "X", "A+", "100%"])
+mytable.add_row(["Luka", "X", "B", "88.1%"])
+
+#output
+print(mytable)
