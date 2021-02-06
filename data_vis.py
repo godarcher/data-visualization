@@ -121,10 +121,11 @@ y2 = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
 plt.figure(figsize=(12, 8))
 
 # make the actual scatter plot
-plt.scatter(x, y)
+plt.scatter(x, y, label="first set")
 
-#we do the scattering again to plot 2 different sets inside the same plot
-plt.scatter(x2,y2)
+# we do the scattering again to plot 2 different sets inside the same plot
+# Note that we used alpha to chagne the opacity of the plot
+plt.scatter(x2, y2, alpha=0.5, label="second set")
 
 # adjust the x and y label (side text)
 plt.xlabel('X coordinate')
@@ -132,6 +133,9 @@ plt.ylabel('Y coordinate')
 
 # adjust the plot title
 plt.title("2D map of x and y coordinates")
+
+# add a legend #?(depends on label in .scatter)
+plt.legend()
 
 # show the plot
 plt.show()
