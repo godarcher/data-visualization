@@ -23,7 +23,8 @@ y = [14, 3, 6, 9]
 plt.hist(y)
 
 # showing plot
-plt.show()
+if show_matplotlib == True:
+    plt.show()
 
 #?##########
 #* BOX PLOT#
@@ -36,7 +37,8 @@ y = [14, 3, 6, 9]
 plt.boxplot(y)
 
 # showing plot
-plt.show()
+if show_matplotlib == True:
+    plt.show()
 
 #?###########
 #* Bar Plot #
@@ -52,7 +54,8 @@ y = [14, 3, 6, 9, 1]
 plt.bar(x, y)
 
 # showing plot
-plt.show()
+if show_matplotlib == True:
+    plt.show()
 
 #?############
 #* Line Plot #
@@ -68,7 +71,8 @@ y = [14, 3, 6, 9, 1]
 plt.plot(x, y)
 
 # showing plot
-plt.show()
+if show_matplotlib == True:
+    plt.show()
 
 #?############
 #* Pie Chart #
@@ -92,8 +96,9 @@ ax1.pie(sizes, explode=explode, labels=label_set,
 # make sure its a circle
 ax1.axis('equal')
 
-# show the plot
-plt.show()
+# showing plot
+if show_matplotlib == True:
+    plt.show()
 
 #?###############
 #* Scatter Plot #
@@ -108,8 +113,9 @@ y = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
 # make the actual scatter plot
 plt.scatter(x, y)
 
-# show the plot
-plt.show()
+# showing plot
+if show_matplotlib == True:
+    plt.show()
 
 #?###################
 #* Plot Customizing #
@@ -147,8 +153,9 @@ plt.title("2D map of x and y coordinates")
 # add a legend #?(depends on label in .scatter)
 plt.legend()
 
-# show the plot
-plt.show()
+# showing plot
+if show_matplotlib == True:
+    plt.show()
 
 #?####################
 #* Creating Subplots #
@@ -195,7 +202,6 @@ ax2 = plt.hist(y2)
 
 # showcase result
 fig.tight_layout()
-
 
 #?##############
 #* prettytable #
