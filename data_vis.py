@@ -390,3 +390,16 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #! This method works better when using hue
+    # ? This because this way it shows differences and overlaps
+
+    # We do a jointplot with 2 different inputs from df, differentiating on gender
+    sns.jointplot(x='math score',
+                  y='reading score',
+                  hue='gender',
+                  data=df
+                  )
+
+    # show the actual plot
+    plt.show()
