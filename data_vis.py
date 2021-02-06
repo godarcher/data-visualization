@@ -323,3 +323,21 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?#########################
+    #* Regression scatter plot#
+    #?#########################
+
+    # set the plot figure size
+    plt.figure(figsize=(9, 6))
+
+    # this creates a scatter plot with a regression line. the regression line tells about the relationship between two points
+    # x data = df(math score), y data = df(reading score), the scatter is set to pink, the line to red, we use somehow similar colours
+    sns.regplot(x=df['math score'],
+                y=df['reading score'],
+                scatter_kws={'color': 'pink'},
+                line_kws={'color': 'red'}
+                )
+
+    # show the actual plot
+    plt.show()
