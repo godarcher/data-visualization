@@ -2,6 +2,11 @@
 from matplotlib import pyplot as plt
 from prettytable import PrettyTable
 
+# * Seaborn dependencies
+import pandas as pd
+import numpy as np
+import seaborn as sns
+
 #?############
 #* HISTOGRAM #
 #?############
@@ -213,3 +218,10 @@ print(mytable)
 # ? This is a query
 # * this is hightlighted, way better then the stupid plain default comments
 # ! this is very important
+
+#?###################
+#* Seaborn data Vis #
+#?###################
+
+# set the style of sns
+sns.set_style('darkgrid')
