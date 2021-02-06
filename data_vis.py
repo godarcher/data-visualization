@@ -15,6 +15,19 @@ plt.hist(y)
 # showing plot
 plt.show()
 
+#?##########
+#* BOX PLOT#
+#?##########
+
+# values on the y axis
+y = [14, 3, 6, 9]
+
+# plotting histogram
+plt.boxplot(y)
+
+# showing plot
+plt.show()
+
 #?###########
 #* Bar Plot #
 #?###########
