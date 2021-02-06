@@ -2,9 +2,9 @@
 from matplotlib import pyplot as plt
 from prettytable import PrettyTable
 
-###########
-#HISTOGRAM#
-###########
+#?############
+#* HISTOGRAM #
+#?############
 
 # values on the y axis
 y = [14, 3, 6, 9]
@@ -15,9 +15,9 @@ plt.hist(y)
 # showing plot
 plt.show()
 
-##########
-#BAR PLOT#
-##########
+#?###########
+#* Bar Plot #
+#?###########
 
 # values on the x axis
 x = [5, 2, 9, 4, 7]
@@ -31,9 +31,9 @@ plt.bar(x, y)
 # showing plot
 plt.show()
 
-###########
-#LINE PLOT#
-###########
+#?############
+#* Line Plot #
+#?############
 
 # values on the x axis
 x = [5, 2, 9, 4, 7]
@@ -47,9 +47,9 @@ plt.plot(x, y)
 # showing plot
 plt.show()
 
-###########
-#PIE CHART#
-###########
+#?############
+#* Pie Chart #
+#?############
 
 # The labels are the names for the parts
 label_set = '7', '6', '8+', '5-'
@@ -72,9 +72,9 @@ ax1.axis('equal')
 # show the plot
 plt.show()
 
-#############
-#Prettytable#
-#############
+#?##############
+#* prettytable #
+#?##############
 
 # specifying column names
 mytable = PrettyTable(["Student Name", "Class", "Section", "Percentage"])
@@ -88,6 +88,10 @@ mytable.add_row(["Luka", "X", "B", "88.1%"])
 
 # output
 print(mytable)
+
+#?###################
+#* testing comments #
+#?###################
 
 # the following section is for testing better comments
 # TODO: Implement x and y
