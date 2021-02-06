@@ -403,3 +403,26 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?#############
+    #* Boxplotting#
+    #?#############
+
+    # A boxplot is an excellent way to show data spread and data outliers of a dataset
+
+    # * Single Boxplot:
+    # We do a boxplot with as data math score from df
+    sns.boxplot(x='math score',
+                data=df
+                )
+
+    # We show the actual boxplot
+    plt.show()
+
+    # ? Multi Boxplot:
+
+    # We do a boxplot for all numerical collumns inside the dataset
+    sns.boxplot(data=df)
+
+    # Show the actual boxplot
+    plt.show()
