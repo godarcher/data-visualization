@@ -87,7 +87,7 @@ plt.show()
 
 #?###############
 #* Scatter Plot #
-#?################
+#?###############
 
 # values on the x axis
 x = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
@@ -101,6 +101,40 @@ plt.scatter(x, y)
 # show the plot
 plt.show()
 
+#?###################
+#* Plot Customizing #
+#?###################
+
+# values on the x axis
+x = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
+
+# values on the y axis
+y = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
+
+# values on the x axis of second set
+x2 = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
+
+# values on the y axis of second set
+y2 = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
+
+# adjust the size of the plot
+plt.figure(figsize=(12, 8))
+
+# make the actual scatter plot
+plt.scatter(x, y)
+
+#we do the scattering again to plot 2 different sets inside the same plot
+plt.scatter(x2,y2)
+
+# adjust the x and y label (side text)
+plt.xlabel('X coordinate')
+plt.ylabel('Y coordinate')
+
+# adjust the plot title
+plt.title("2D map of x and y coordinates")
+
+# show the plot
+plt.show()
 
 #?##############
 #* prettytable #
