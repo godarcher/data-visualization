@@ -140,6 +140,52 @@ plt.legend()
 # show the plot
 plt.show()
 
+#?####################
+#* Creating Subplots #
+#?####################
+
+# values on the x axis
+x = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
+
+# values on the y axis
+y = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
+
+# values on the x axis of second set
+x2 = [14, 3, 6, 9, 1, 3, 1, 2, 7, 8, 3, 4, 11]
+
+# values on the y axis of second set
+y2 = [5, 2, 9, 4, 7, 6, 3, 1, 4, 11, 4, 4, 5]
+
+# alternative way to chance the size of the plot
+fig = plt.figure(figsize=(12, 8))
+
+# we create a sublpot
+ax1 = plt.subplot2grid((2, 2), (0, 0))
+# make the actual scatter plot
+ax1 = plt.scatter(x, y, label="first set")
+# adjust the x and y label (side text)
+ax1 = plt.xlabel('X coordinate')
+ax1 = plt.ylabel('Y coordinate')
+# adjust the plot title
+ax1 = plt.title("2D map of x and y coordinates")
+
+# we create a sublpot
+ax2 = plt.subplot2grid((2, 2), (0, 1))
+# make the actual scatter plot
+ax2 = plt.scatter(x2, y2, label="second set")
+# adjust the x and y label (side text)
+ax2 = plt.xlabel('X coordinate')
+ax2 = plt.ylabel('Y coordinate')
+# adjust the plot title
+ax2 = plt.title("2D map of x and y coordinates")
+
+# make histogram for ax2
+ax2 = plt.subplot2grid((2, 2), (1, 0), colspan=2)
+ax2 = plt.hist(y2)
+
+# showcase result
+fig.tight_layout()
+
 #?##############
 #* prettytable #
 #?##############
