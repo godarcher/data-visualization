@@ -374,3 +374,19 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?#######################################
+    #* univariate and bivariate distribution#
+    #?#######################################
+
+    # * This plot also pluts univariate and bivariate distributions at the top and side
+    # ? the distribution density for x and y if you want to put it different
+
+    # We do a jointplot with 2 different inputs from df
+    sns.jointplot(x='math score',
+                  y='reading score',
+                  data=df
+                  )
+
+    # show the actual plot
+    plt.show()
