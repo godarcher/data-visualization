@@ -186,6 +186,7 @@ ax2 = plt.hist(y2)
 # showcase result
 fig.tight_layout()
 
+
 #?##############
 #* prettytable #
 #?##############
