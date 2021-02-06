@@ -295,15 +295,31 @@ if (show_seaborn == True):
     # show the actual plot
     plt.show()
 
-    #?################
-    #* Distance Plots#
-    #?################
+    #?###############
+    #* Distance Plot#
+    #?###############
 
     # set the plot figure size
     plt.figure(figsize=(9, 6))
 
     # plot distance plot with x data df, and kde false (don't show kde of the distribution)
     sns.distplot(x=df['math score'], kde=False)
+
+    # show the actual plot
+    plt.show()
+
+    #?##############
+    #* KDE plotting#
+    #?##############
+
+    # * KDE stands for Kernal Density Estimate, more information about it is available here:
+    # ? https://mathisonian.github.io/kde/
+
+    # set the plot figure size
+    plt.figure(figsize=(9, 6))
+
+    # Do a kernal density plot with data math score
+    sns.kdeplot(x=df['math score'])
 
     # show the actual plot
     plt.show()
