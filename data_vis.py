@@ -7,6 +7,11 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 
+# * Settings
+show_matplotlib = False
+show_seaborn = True
+
+
 #?############
 #* HISTOGRAM #
 #?############
@@ -225,3 +230,27 @@ print(mytable)
 
 # set the style of sns
 sns.set_style('darkgrid')
+
+"""
+? This are possible options to use for sns.set_style()
+* darkgrid
+* whitegrid
+* dark
+* white
+* ticks
+"""
+
+# load the student database we use for this examples
+df = pd.read_csv('data.csv')
+df.head()
+
+
+#?###############
+#* Scatter plot #
+#?###############
+
+# do scatter with as input x and y coordinates
+sns.scatterplot(x=df['math score'], y=df['reading score'])
+
+# show the actual plot
+plt.show()
