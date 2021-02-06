@@ -279,3 +279,18 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?############
+    #* Count Plot#
+    #?############
+
+    # set the plot figure size
+    plt.figure(figsize=(9, 6))
+
+    # plot countplot with x label and data df
+    sns.countplot(x='race/ethnicity',
+                  data=df
+                  )
+
+    # show the actual plot
+    plt.show()
