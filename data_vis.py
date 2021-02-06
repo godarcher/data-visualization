@@ -234,12 +234,12 @@ if (show_seaborn == True):
     sns.set_style('darkgrid')
 
     """
-        ? This are possible options to use for sns.set_style()
-        * darkgrid
-        * whitegrid
-        * dark
-        * white
-        * ticks
+        * This are possible options to use for sns.set_style()
+        ? darkgrid
+        ? whitegrid
+        ? dark
+        ? white
+        ? ticks
     """
 
     # load the student database we use for this examples
@@ -252,6 +252,30 @@ if (show_seaborn == True):
 
     # do scatter with as input x and y coordinates
     sns.scatterplot(x=df['math score'], y=df['reading score'])
+
+    # show the actual plot
+    plt.show()
+
+    """
+        * We can implement this using multiple ways:
+        ? plt.figure(figsize = (9,6))
+        ? sns.scatterplot(x = 'math score', y = 'reading score',data = df)
+    """
+
+    #?#######################
+    #* Scatter plot extended#
+    #?#######################
+
+    # set the plot figure size
+    plt.figure(figsize=(9, 6))
+
+    # plot data labels x and y, data df, differentiate in gender and use alpha for opacity.
+    sns.scatterplot(x='math score',
+                    y='reading score',
+                    hue='gender',
+                    data=df,
+                    alpha=0.8
+                    )
 
     # show the actual plot
     plt.show()
