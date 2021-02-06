@@ -446,3 +446,45 @@ if (show_seaborn == True):
 
     # Show the actual plot
     plt.show()
+
+    #?##################
+    #* Heatmap Plotting#
+    #?##################
+
+    # * This plot plots a heatmap of the input data, this is most commonly used for correlation heatmaps
+    # ? annot=True enables displaying the value of the cells, setting it to false would disable this
+
+    # We do a heatmap plot with correlation of the input data, annot true and add an inferno bar to it
+    sns.heatmap(df.corr(),
+                annot=True,
+                cmap='inferno')
+
+    # Show the actual plot
+    plt.show()
+
+    #?###################
+    #* Colour adjustment#
+    #?###################
+
+    """
+        *plt.figure(figsize = (12,8))
+        *
+        ? colors = [
+        ?       '#F8D030',
+        ?       '#E0C068',
+        ?       '#EE99AC',
+        ?       '#C03028',
+        ?       '#F85888'
+        ? ]
+        *
+        * sns.stripplot(x = 'race/ethnicity',
+        *           y = 'math score', 
+        *           data = df,
+        *           palette = colors
+        * )
+        *
+        * plt.show()
+    """
+
+    #! For even more ways to plot data, make sure to check out the following url:
+    # * http://seaborn.pydata.org/examples/
