@@ -341,3 +341,18 @@ if (show_seaborn == True):
 
     # show the actual plot
     plt.show()
+
+    #?################################
+    #* Subset regresiion scatter plot#
+    #?################################
+
+    # do a plot with x data, y data, making a gender based differentiaton
+    # this method automaticly makes a regression line for every subset in the plot
+    sns.lmplot(x='math score',
+               y='reading score',
+               hue='gender',
+               data=df
+               )
+
+    # show the actual plot
+    plt.show()
